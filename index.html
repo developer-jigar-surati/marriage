@@ -98,7 +98,7 @@
 							<h1>Jigar &amp; Hemaxi</h1>
 							<h2>We Are Getting Married</h2>
 							<div class="simply-countdown simply-countdown-one"></div>
-							<p id="downloadICSBtn"><a href="javascript:void(0);" onclick="addToGoogleCalendar()" class="btn btn-default btn-sm">Save the date</a></p>
+							<p><a href="javascript:void(0);" onclick="addToGoogleCalendar()" class="btn btn-default btn-sm">Save the date</a></p>
 						</div>
 					</div>
 				</div>
@@ -675,67 +675,6 @@ Join us as we unite in marriage, blending technology and care, and look forward 
 				updateBackground(); // Update background on window resize
 			});
 		});
-
-// Function to generate and download the ICS file
-$('#downloadICSBtn').on('click', function() {
-        const title = "Jigar & Hemaxi Wedding";
-        const location = "Surat, Gujarat, India";
-        const description = `
-**Jigar**:
-"I build solutions; soon, we'll build a life together."
-
-**Hemaxi**:
-"I care for others; now, we'll care for our future as one."
-
-With hearts full of love and dreams for the future, we invite you to celebrate the beginning of our lifelong journey.
-
-Join us as we unite in marriage, blending technology and care, and look forward to the beautiful future we’ll create together.
-        `;
-
-        const startDate = new Date(2024, 11, 12, 8, 0, 0); // 08:00:00 IST
-        const endDate = new Date(2024, 11, 12, 23, 59, 59); // 23:59:59 IST
-
-        function formatDateToICS(date) {
-            return date.toISOString().replace(/-|:|\.\d+/g, '') + 'Z';
-        }
-
-        const icsContent = `
-BEGIN:VCALENDAR
-VERSION:2.0
-PRODID:-//Your Organization//NONSGML v1.0//EN
-CALSCALE:GREGORIAN
-BEGIN:VEVENT
-UID:${Date.now()}@yourdomain.com
-DTSTAMP:${formatDateToICS(new Date())}
-DTSTART:${formatDateToICS(startDate)}
-DTEND:${formatDateToICS(endDate)}
-SUMMARY:${title}
-DESCRIPTION:${description}
-LOCATION:${location}
-BEGIN:VALARM
-TRIGGER:-P5D
-DESCRIPTION:Reminder
-ACTION:DISPLAY
-END:VALARM
-BEGIN:VALARM
-TRIGGER:-P3D
-DESCRIPTION:Reminder
-ACTION:DISPLAY
-END:VALARM
-END:VEVENT
-END:VCALENDAR`;
-
-        const blob = new Blob([icsContent], { type: 'text/calendar' });
-        const url = URL.createObjectURL(blob);
-
-        const a = document.createElement('a');
-        a.href = url;
-        a.download = 'wedding_event.ics';
-        a.click();
-
-        // Clean up
-        URL.revokeObjectURL(url);
-    });
 	</script>
 
 	</body>
