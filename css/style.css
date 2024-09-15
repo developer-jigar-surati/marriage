@@ -1016,6 +1016,19 @@ form label {
   }
 }
 
+#fh5co-footer, 
+.fh5co-section {
+  padding: 3em 0 1em 0 !important;
+  clear: both !important;
+}
+
+@media screen and (max-width: 768px) {
+  #fh5co-footer,
+  .fh5co-section {
+    padding: 0 !important;
+  }
+}
+
 .fh5co-section-gray {
   background: rgba(0, 0, 0, 0.04);
 }
