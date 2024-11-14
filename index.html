@@ -34,6 +34,59 @@
 		<link rel="stylesheet" href="css/owl.carousel.min.css">
 		<link rel="stylesheet" href="css/owl.theme.default.min.css">
 		<link rel="stylesheet" href="css/style.css">
+
+		<!-- Styles for the top header -->
+		<style>
+			.top-header-1 {
+				font-family: Arial, sans-serif;
+				color: #828282;
+			}
+			.container-1 {
+				max-width: 1200px;
+				margin: 0 auto;
+				padding: 0 15px;
+			}
+			.flex-1 {
+				display: flex;
+			}
+			.flex-wrap-1 {
+				flex-wrap: wrap;
+			}
+			.justify-between-1 {
+				justify-content: space-between;
+			}
+			.items-center-1 {
+				align-items: center;
+			}
+			.bg-light-1 {
+				background-color: #fff;
+			}
+			.text-gray-700-1 {
+				color: #828282;
+			}
+			.text-sm-1 {
+				font-size: 15px;
+			}
+			.address-break {
+				display: none;
+			}
+		
+			/* Responsive styling */
+			@media (max-width: 768px) {
+				.justify-between-1 {
+					justify-content: center;
+					text-align: center;
+				}
+				.address-1,
+				.phone-1 {
+					width: 100%;
+					padding: 5px 0;
+				}
+				.address-break {
+					display: block;
+				}
+			}
+		</style>
 	
 		<!-- Scripts -->
 		<script src="js/modernizr-2.6.2.min.js"></script>
@@ -54,7 +107,23 @@
 	<body>
 		
 		<div class="fh5co-loader"></div>
-		
+		<!-- Top Header -->
+		<div class="top-header-1 bg-light-1 py-2-1">
+			<div class="container-1">
+				<div class="flex-1 justify-between-1 items-center-1 flex-wrap-1">
+					<div class="text-sm-1 text-gray-700-1 address-1">
+						<div class="address-container">
+							📍 H-303, Anand Villa Apt., 
+							<br class="address-break" /> 
+							Ugat Bhesan Road, Surat
+						</div>
+					</div>
+					<a href="tel:+918733051014" class="text-sm-1 text-gray-700-1 phone-1">
+					📞 +91 8733051014
+					</a>
+				</div>
+			</div>
+		</div>
 		<div id="page">
 		<nav class="fh5co-nav" role="navigation">
 			<div class="container">
@@ -155,40 +224,52 @@
 				<div class="row">
 					<div class="display-t">
 						<div class="display-tc">
-							<div class="col-md-10 col-md-offset-1">
-								<div class="col-md-6 col-sm-6 text-center">
+							<div class="col-md-12">
+								<div class="col-md-4 col-sm-4 text-center">
 									<div class="event-wrap animate-box">
-										<h3>Dj Night & Dinner</h3>
+										<h3>Dinner</h3>
 										<div class="event-col">
 											<i class="icon-clock"></i>
-											<span>Comming soon</span>
-											<!-- <span>07:00 PM</span> -->
+											<span>06:30 PM <br /> onwards</span>
 										</div>
 										<div class="event-col">
 											<i class="icon-calendar"></i>
 											<span>Wednesday 11</span>
-											<span>December, 2024</span>
+											<span>December</span>
 										</div>
-										<p>Join us for a delightful dinner and an exciting DJ night. Let’s celebrate with great food, fantastic music, and unforgettable moments together!</p>
+										<p style="text-align: justify;">Join us for a delightful dinner filled with delicious food and great company. Let’s indulge in a feast and create lasting memories together!</p>
 									</div>
 								</div>
 
-								<div class="col-md-6 col-sm-6 text-center">
+								<div class="col-md-4 col-sm-4 text-center">
+									<div class="event-wrap animate-box">
+										<h3>Garba Night</h3>
+										<div class="event-col">
+											<i class="icon-clock"></i>
+											<span>08:30 PM <br /> onwards</span>
+										</div>
+										<div class="event-col">
+											<i class="icon-calendar"></i>
+											<span>Wednesday 11</span>
+											<span>December</span>
+										</div>
+										<p style="text-align: justify;">Get ready for an exciting DJ night! Let’s dance to fantastic beats, enjoy vibrant music, and celebrate under the stars with unforgettable moments!</p>
+									</div>
+								</div>
+
+								<div class="col-md-4 col-sm-4 text-center">
 									<div class="event-wrap animate-box">
 										<h3>Main Ceremony</h3>
 										<div class="event-col">
 											<i class="icon-clock"></i>
-											<!-- <span>4:00 PM</span>
-											<span>6:00 PM</span> -->
-											<span>Comming Soon</span>
-											<!-- <span>Soon</span> -->
+											<span>10:00 AM <br /> onwards</span>
 										</div>
 										<div class="event-col">
 											<i class="icon-calendar"></i>
 											<span>Thursday 12</span>
-											<span>December 2024</span>
+											<span>December</span>
 										</div>
-										<p>Join us in celebrating the start of our new journey together. Your presence and blessings will add joy and happiness to this special beginning.</p>
+										<p style="text-align: justify;">Join us in celebrating the start of our new journey together. Your presence and blessings will add joy and happiness to this special beginning.</p>
 									</div>
 								</div>
 							</div>
@@ -269,7 +350,7 @@
 				<div class="row">
 					<div class="col-md-8 col-md-offset-2 text-center fh5co-heading animate-box">
 						<span>Our Memories</span>
-						<h2>Wedding Gallery</h2>
+						<h2>Our Gallery</h2>
 						<p>The beautiful moments we captured.</p>
 					</div>
 				</div>
@@ -284,7 +365,7 @@
 								</div>
 							</a>
 						</li>
-						<li class="one-third animate-box" data-animate-effect="fadeIn" style="background-image: url(images/2.jpg); ">
+						<li class="one-third animate-box" data-animate-effect="fadeIn" style="background-image: url(images/2.jpeg); ">
 							<a href="javascript:void(0)" class="color-2">
 								<div class="case-studies-summary">
 									<!-- <span>30 Photos</span>
@@ -300,14 +381,14 @@
 								</div>
 							</a>
 						</li>
-						<li class="one-third animate-box" data-animate-effect="fadeIn" style="background-image: url(images/4.jpg); ">
+						<!-- <li class="one-third animate-box" data-animate-effect="fadeIn" style="background-image: url(images/4.jpg); ">
 							<a href="javascript:void(0)" class="color-4">
 								<div class="case-studies-summary">
-									<!-- <span>12 Photos</span>
-									<h2>Company's Conference Room</h2> -->
+									<span>12 Photos</span>
+									<h2>Company's Conference Room</h2>
 								</div>
 							</a>
-						</li>
+						</li> -->
 
 							<li class="one-third animate-box" data-animate-effect="fadeIn" style="background-image: url(images/5.JPG); ">
 								<a href="javascript:void(0)" class="color-3">
@@ -317,14 +398,14 @@
 									</div>
 								</a>
 							</li>
-							<li class="one-third animate-box" data-animate-effect="fadeIn" style="background-image: url(images/6.jpg); ">
+							<!-- <li class="one-third animate-box" data-animate-effect="fadeIn" style="background-image: url(images/6.jpg); ">
 								<a href="javascript:void(0)" class="color-4">
 									<div class="case-studies-summary">
-										<!-- <span>45 Photos</span>
-										<h2>Skater man in the road</h2> -->
+										<span>45 Photos</span>
+										<h2>Skater man in the road</h2>
 									</div>
 								</a>
-							</li>
+							</li> -->
 
 							<li class="one-third animate-box" data-animate-effect="fadeIn" style="background-image: url(images/7.JPG); ">
 								<a href="javascript:void(0)" class="color-4">
@@ -335,14 +416,14 @@
 								</a>
 							</li>
 
-							<li class="one-third animate-box" data-animate-effect="fadeIn" style="background-image: url(images/8.jpg); "> 
+							<!-- <li class="one-third animate-box" data-animate-effect="fadeIn" style="background-image: url(images/8.jpg); "> 
 								<a href="javascript:void(0)" class="color-5">
 									<div class="case-studies-summary">
-										<!-- <span>90 Photos</span>
-										<h2>Timer starts now!</h2> -->
+										<span>90 Photos</span>
+										<h2>Timer starts now!</h2>
 									</div>
 								</a>
-							</li>
+							</li> -->
 							<li class="one-third animate-box" data-animate-effect="fadeIn" style="background-image: url(images/9.JPG); ">
 								<a href="javascript:void(0)" class="color-6">
 									<div class="case-studies-summary">
